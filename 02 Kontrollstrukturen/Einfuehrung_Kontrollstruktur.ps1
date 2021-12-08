@@ -1,13 +1,17 @@
-[int] $zahl = Read-Host 
-
-#Problem: Was machen wir, wenn der Nutzer die Zahl 0 eingibt
-#Ziel: Optimieren Sie das Problem
-
+[int] $zahl = Read-Host
+ 
 if($zahl -gt 0)
 {
-    write-host "Die Zahl ist grösser 0"
+    write-host "Zahl ist größer 0"
 }
-else 
+else
 {
-    write-host "Die Zahl ist kleiner 0"    
+    if($zahl -eq 0)
+    {
+        write-host "Zahl ist 0"
+    }
+    else 
+    {
+        write-host "Zahl ist kleiner 0"
+    }
 }

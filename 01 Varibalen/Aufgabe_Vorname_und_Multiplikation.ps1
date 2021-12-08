@@ -7,5 +7,5 @@ write-host $vorname $nachname
 [int]$nutzer1=Read-Host
 [int]$nutzer2=Read-Host
 [int]$nutzer3=Read-Host
-[int]$ergebnis = ($nutzer1 * $nutzer2 * $nutzer3)
+$ergebnis = ($nutzer1 * $nutzer2 * $nutzer3)
 write-host $ergebnis
