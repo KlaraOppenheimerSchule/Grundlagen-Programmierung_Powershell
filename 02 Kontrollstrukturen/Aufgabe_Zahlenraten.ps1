@@ -10,30 +10,30 @@ if ($inputZahl -eq $randomZahl)
 }
 else
 {
-    while ($inputZahl -ne $randomZahl)
+    while (($inputZahl -ne $randomZahl) -and ($timer -ne 0))
     {
         $timer=$timer- 1
         #Write-Host "InputZahl: $inputZahl" 
         #Write-Host "RandomZahl: $randomZahl"
         if ($timer -eq 0)
         {
-            Write-Host: "Du hast leider keine Versuche mehr!"
+            Write-Host "Du hast leider keine Versuche mehr!"
+            #break
         }
-        if ($inputZahl -eq $randomZahl)
+        else
         {
-            Write-Host "GLUECKWUNSCH! Die Zahl ist Richtig!"
-        }
-        if ($inputZahl -gt $randomZahl)
-        {
-            Write-Host "Die gesuchte Zahl ist kleiner als $inputZahl" 
-            Write-Host "Versuche es nochmal & Rate eine Zahl zwischen 1 & 10, Du hast Noch $timer Versuche!"
-            $inputZahl=Read-Host
-        }
-        if ($inputZahl -lt $randomZahl)
-        {
-            Write-Host "Die gesuchte Zahl ist groesser als  $inputZahl"
-            Write-Host "Versuche es nochmal & Rate eine Zahl zwischen 1 & 10, Du hast Noch $timer Versuche!"
-            $inputZahl=Read-Host
+            if ($inputZahl -gt $randomZahl)
+            {
+                Write-Host "Die gesuchte Zahl ist kleiner als $inputZahl" 
+                Write-Host "Versuche es nochmal & Rate eine Zahl zwischen 1 & 10, Du hast Noch $timer Versuche!"
+                $inputZahl=Read-Host
+            }
+            if ($inputZahl -lt $randomZahl)
+            {
+                Write-Host "Die gesuchte Zahl ist groesser als  $inputZahl"
+                Write-Host "Versuche es nochmal & Rate eine Zahl zwischen 1 & 10, Du hast Noch $timer Versuche!"
+                $inputZahl=Read-Host
+            }
         }
     }
     if ($inputZahl -eq $randomZahl)
