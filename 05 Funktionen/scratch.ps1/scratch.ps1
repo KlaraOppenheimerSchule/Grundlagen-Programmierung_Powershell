@@ -1,0 +1,1 @@
+get-random 1
