@@ -1,6 +1,7 @@
+<#
 #Aufgabe 1
-new-item c:\test\test.txt -type file
-remove-item c:\test\test.txt
+new-item -path c:\test\test.txt -type file -value "Inhalt"
+remove-item -path c:\test\test.txt
 
 
 #Aufgabe 2
@@ -28,13 +29,13 @@ else
 }
 
 
-<#
 #Aufgabe 4
-Remove-Item 'H:\AWP\Arbeiten im Dateisystem\Files\PDF\*' -Recurse
-
+New-Item -path C:\Desktop\test\Scans\test97.txt -type file -value "Testinhalt"
+Remove-Item C:\Desktop\test\Scans\* -Recurse
+#>
 
 #Aufgabe 5
-if(-not (test-path C:\Desktop\test\Altscans))
+if((test-path C:\Desktop\test\Altscans) -eq $false)
 {
     new-item C:\Desktop\test\Altscans -type Directory
 }
@@ -47,23 +48,10 @@ foreach ($Scan in $Scans)
     if ($Scan.length -gt 100KB)
     {
         Remove-Item $Scan.fullname -Force
-        Write-Host "$Scan gelÃ¶scht"
+        Write-Host "$Scan geloescht"
     }
     else
     {
-        Write-Host "$Scan nicht gelÃ¶sch“
+        Write-Host "$Scan nicht geloescht"
     } 
 }
-
-#Alte Aufgabe
-
-#A2
-$Dateien = Get-ChildItem C:\Desktop\test
-foreach ($Datei in $Dateien)
-{
-    if ($Datei.length -eq 0)
-    {
-        Remove-Item $Datei.fullname -Force
-    } 
-}
-#>
