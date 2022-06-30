@@ -2,7 +2,7 @@
 class Auto 
 {
     #Attribute der Klasse
-    [string]  $hersteller 
+    [string] $hersteller 
     [string] $modell
     [int] $leistung
     [float] $verbrauch
@@ -56,9 +56,10 @@ $meinAuto3 = [Auto]::new("Vw", "A4", 2035, 150, 4.5)
 $meinAuto4 = [Auto]::new("Vw", "A4", 2045, 150, 4.5)
 $meinAuto5 = [Auto]::new("Vw", "A4", 2055, 150, 4.5)
 $meinAuto6 = [Auto]::new("Vw", "A4", 2017, 150, 4.5)
+$meinAuto7 = [Auto]::new("BMW", "M4", 2000, 200, 3.5)
 
+#Autos einer Arraylist von Autos zuordnen, quasi unser "Fuhrpark"
 $meineAutos= New-Object System.Collections.ArrayList
-
 $meineAutos.add($meinAuto)
 $meineAutos.add($meinAuto1)
 $meineAutos.add($meinAuto2)
@@ -66,21 +67,17 @@ $meineAutos.add($meinAuto3)
 $meineAutos.add($meinAuto4)
 $meineAutos.add($meinAuto5)
 $meineAutos.add($meinAuto6)
+$meineAutos.add($meinAuto7)
 
+$meinAuto7.tuerOeffnen()
+
+#Iterieren über meine Autoobjekte
+<#
 foreach($meinAuto in $meineAutos)
 {
+    $meinAuto.hersteller
+    $meinAuto.modell
     $meinAuto.baujahr
+    $meinAuto.tuerOeffnen()
 }
-
-
-#Anzeige aller Werte 
-$meinAuto.hersteller 
-
-#Aufruf der genannten Methode auf dem Objekt $meinAuto
-$meinAuto.tuerOeffnen()
-#$meinAuto.tuerSchliessen()
-#$meinAuto.tuerSchliessen()
-
-#$meinAuto.baujahr
-
-#$meinAuto | Get-Member
+#>
