@@ -1,17 +1,17 @@
-[int] $zahl = Read-Host
+[int] $eingegebeneZahl = Read-Host "Bitte geben Sie eine Zahl ein, die positiv ist"
  
-if($zahl -gt 0)
+if($eingegebeneZahl -gt 0)
 {
-    write-host "Zahl ist größer 0"
+    write-host "Die Zahl ist größer null. $eingegebeneZahl"
 }
 else
 {
-    if($zahl -eq 0)
+    if($eingegebeneZahl -eq 0)
     {
-        write-host "Zahl ist 0"
+        write-host "Sie haben 0 eingetragen"
     }
     else 
     {
-        write-host "Zahl ist kleiner 0"
+        write-host "Die Zahl ist kleiner null. $eingegebeneZahl"
     }
 }

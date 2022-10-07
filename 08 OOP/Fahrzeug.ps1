@@ -69,10 +69,7 @@ $meineAutos.add($meinAuto5)
 $meineAutos.add($meinAuto6)
 $meineAutos.add($meinAuto7)
 
-$meinAuto7.tuerOeffnen()
-
 #Iterieren über meine Autoobjekte
-<#
 foreach($meinAuto in $meineAutos)
 {
     $meinAuto.hersteller
@@ -80,4 +77,3 @@ foreach($meinAuto in $meineAutos)
     $meinAuto.baujahr
     $meinAuto.tuerOeffnen()
 }
-#>

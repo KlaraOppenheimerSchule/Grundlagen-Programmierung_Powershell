@@ -1,4 +1,3 @@
-<#
 #Aufgabe 1
 new-item -path c:\test\test.txt -type file -value "Inhalt"
 remove-item -path c:\test\test.txt
@@ -32,7 +31,7 @@ else
 #Aufgabe 4
 New-Item -path C:\Desktop\test\Scans\test97.txt -type file -value "Testinhalt"
 Remove-Item C:\Desktop\test\Scans\* -Recurse
-#>
+
 
 #Aufgabe 5
 if((test-path C:\Desktop\test\Altscans) -eq $false)

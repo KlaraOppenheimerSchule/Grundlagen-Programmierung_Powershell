@@ -5,28 +5,32 @@ class PC
     [string] $modell
     [bool] $angeschaltet
 
-    PC ([string] $hersteller,[string] $baujahr,[string] $modell,[bool]$angeschaltet)
+    #Konstruktor
+    PC ([string] $herstellerx,[string] $baujahr,[string] $modell,[bool]$angeschaltet)
     {
-        $this.hersteller = $hersteller
+        $this.hersteller = $herstellerx
         $this.baujahr = $baujahr
         $this.modell = $modell
         $this.angeschaltet = $angeschaltet
     }
 
-  [void] hochfahren()
-  {
-    if ($this.angeschaltet)
+    #Soll hoch- und runterfahren, Methode ist noch zu durchdenken, in der Realisierun
+    #Wie Autobeispiel
+    [void] hochfahren()
     {
-         Write-Host -Object "PC ist angeschalten" -ForegroundColor Red
+        if ($this.angeschaltet)
+        {
+            Write-Host -Object "PC ist ausgeschaltet" -ForegroundColor Green
+            $this.angeschaltet=$false
+       
+        }
+        else
+        {
+            Write-Host -Object "PC ist angeschalten" -ForegroundColor Red
+        }
     }
-    else
-    {
-         Write-Host -Object "PC ist ausgeschaltet" -ForegroundColor Red
-         $this.angeschaltet=$true
-    }
-  }
-
 }
+
 #Arraylist erzeugen
 $Pcs = New-Object System.Collections.ArrayList
 
@@ -43,5 +47,6 @@ $Pcs.Add($PC3)
 #Jeden PC aus der Arraylist Pcs hochfahren
 foreach ($PC in $Pcs)
 {
+   $PC.hochfahren()
    $PC.hochfahren()
 }
