@@ -6,5 +6,13 @@ if($eingelesenZahl -gt 0)
 }
 else 
 {
-    write-host "Die Zahl ist negativ"    
+    if($eingelesenZahl -eq 0)
+    {
+        write-host "Sie haben 0 eingegeben"    
+    }
+    else 
+    {
+        write-host "Die Zahl ist kleiner null! $eingeleseneZahl"    
+    }
 }
+    
