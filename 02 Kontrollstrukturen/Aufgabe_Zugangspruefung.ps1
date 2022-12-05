@@ -3,17 +3,18 @@ $pass = "admin"
  
 write-host "Benutzername:"
 $benutzerName = read-host
- 
- 
+
+write-host "Passwort"
+$benutzerPasswort = read-host
+
 if($user -ceq $benutzerName)
 {
-    write-host "Passwort"
-    $passwort = read-host
-
-    if($pass -ceq $passwort){
+    if($pass -ceq $benutzerPasswort)
+    {
         write-host "Zugang gewährt"
     }
-    else{
+    else
+    {
         write-host "Passwort falsch"
     }
 }

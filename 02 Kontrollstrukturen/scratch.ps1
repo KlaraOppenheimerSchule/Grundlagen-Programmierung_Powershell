@@ -2,17 +2,10 @@
 
 if($eingelesenZahl -gt 0)
 {
-    write-host "Die Zahl ist größer null. Super gemacht! $eingeleseneZahl"
+    write-host "Zahl ist größer null"
 }
 else 
 {
-    if($eingelesenZahl -eq 0)
-    {
-        write-host "Sie haben 0 eingegeben"    
-    }
-    else 
-    {
-        write-host "Die Zahl ist kleiner null! $eingeleseneZahl"    
-    }
+    Write-Host "Zahl ist kleiner null"
 }
-    
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted
