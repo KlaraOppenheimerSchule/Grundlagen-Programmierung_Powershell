@@ -1,20 +1,50 @@
-[int]$zahl1= read-host "Zahl1 eingeben"
-[int]$zahl2= read-host "Zahl1 eingeben"
-
-function zahlenAddieren($lzahl1, $lzahl2)
+function addNumber($zahl1, $zahl2)
 {
-    $ergebnis=$lzahl1+$lzahl2
+    $ergebnis=$zahl1+$zahl2
+    write-host $ergebnis
+}
 
-    #Rückgabe des Ergebnisses an den Aufrufer
+#Funktionsaufruf
+addNumber 10 5
+addNumber 134230 5234
+addNumber 12342340 5234234
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Funktion, die das Ergebnis an den Aufrufer zurückgibt
+<#
+function addNumber($zahl1, $zahl2)
+{
+    $ergebnis=$zahl1+$zahl2
+    #write-host $ergebnis
+    #Das Ergbnis an den Aufrufer zurückgeben
     return $ergebnis
 }
-
-
-$berechnetesErgebnis=zahlenAddieren $zahl1 $zahl2
-
-
-
-if($berechnetesErgebnis -gt 10)
-{
-    write-host "$berechnetesErgebnis ist größer als 10"
-}
+$rueckgabeErgebnis=addNumber 10 5
+write-host $rueckgabeErgebnis
+#>
