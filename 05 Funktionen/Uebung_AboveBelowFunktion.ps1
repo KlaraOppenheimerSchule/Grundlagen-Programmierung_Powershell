@@ -19,11 +19,11 @@ function AboveBelow($vals)
     $avg=$sum/$vals.length
 
     #Werte dem entsprechenden Array zuordnen
-    $sum=0
     $above = @()
     $below = @()
     foreach($element in $vals)
     {
+        #TODO: Gleichheit noch abdecken
         if($element -gt $avg)
         {
             $above+= $element
@@ -33,11 +33,13 @@ function AboveBelow($vals)
             $below+= $element    
         }
     }
+    #Alle drei Werte an den Aufrufer zurückgeben
     return $avg, $below, $above
 }
 
 $werte  =   ReadInputValues
 
+#Bei Rückgabe auch drei Werte zum Auffangen der Rückgabewerte nutzen
 $avg, $below, $above=  AboveBelow $werte
 write-host "AVG: $avg"
 write-host "above: $above"
