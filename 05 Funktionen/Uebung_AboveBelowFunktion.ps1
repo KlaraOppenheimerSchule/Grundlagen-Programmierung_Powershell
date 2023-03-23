@@ -33,14 +33,12 @@ function AboveBelow($vals)
             $below+= $element    
         }
     }
-    
-
     return $avg, $below, $above
 }
 
 $werte  =   ReadInputValues
 
-$avg, $above, $below = AboveBelow $werte
+$avg, $below, $above=  AboveBelow $werte
 write-host "AVG: $avg"
 write-host "above: $above"
 write-host "below: $below"
