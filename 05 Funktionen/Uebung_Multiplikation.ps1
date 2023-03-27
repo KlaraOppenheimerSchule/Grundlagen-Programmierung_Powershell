@@ -8,6 +8,5 @@ function Multiplikation($zahl1,$zahl2, $zahl3) {
 [int] $zahl3 = Read-Host "Zahl 3"
  
 Multiplikation $zahl1 $zahl2 $zahl3
- 
-#Multiplikation 2 2 2
+
 Write-Host $ergebnis

@@ -12,5 +12,3 @@ $essensWuensche.Remove("Klaus4")
 
 $essensWuensche[2]="Uschi"
 write-host $essensWuensche
-
-#foreach-Schleife
