@@ -1,14 +1,12 @@
-function Zinsen ($Kapital, $Zinssatz, $Zinstage)
+function zinsBerechnung ($kapital, $zinssatz, $zinstage)
 {
-    #$formel = ($Kapital * $Zinssatz * $Zinstage)/(100*360)
-
-    $formel = ($Kapital * $Zinssatz * $Zinstage)/(100*360)
-    return $formel
+    $zinsen = ($kapital * $zinssatz * $zinstage)/(100*360)
+    return $zinsen
 }
 
-[double]$Kapital = Read-Host "Kapital eingeben"
-[double]$Zinssatz = Read-Host "Zinssatz eingeben"
-[double]$Zinstage = Read-Host "Zinstage eingeben"
+[double]$kapital = Read-Host "Kapital eingeben"
+[double]$zinssatz = Read-Host "Zinssatz eingeben"
+[double]$zinstage = Read-Host "Zinstage eingeben"
 
-$erg = Zinsen $Kapital $Zinssatz $Zinstage
+$erg = zinsBerechnung $kapital $zinssatz $zinstage
 write-host $erg

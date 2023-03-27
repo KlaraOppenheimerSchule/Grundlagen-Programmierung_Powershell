@@ -11,13 +11,6 @@ $durchschnittsAlter=$summeAlter/4
 write-host "Das Durchschnittsalter beträgt: $durchschnittsAlter"
 
 
-
-
-
-
-
-
-
 #Alternativ mit einer While-Schleife
 $summeAlter=0
 $zaehler=1
