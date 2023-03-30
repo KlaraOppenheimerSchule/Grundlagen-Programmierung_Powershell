@@ -18,19 +18,22 @@ function checkLeapYear($year)
     }
 }
 
-#Zahl vom Nutzer einlesen
-[int]$year=read-host "Bitte Jahr eingeben"
+#Erstellen mal ein Array mit Jahreszahlen
+$jahreszahlen=1, 2, 400, 1986, 1989, 2000, 2002, 2023, 2200
 
-
-#Funktion aufrufen mit Übergabeparameter und Rückgabewert speichern
-$result=checkLeapYear $year
-
-#Nutzer über das Vorliegen eines Schaltjahres informieren
-if ($result)
+foreach($jahreszahl in $jahreszahlen)
 {
-    write-host "Es liegt ein Schaltjahr vor"
+    $result=checkLeapYear $jahreszahl
+    #Nutzer über das Vorliegen eines Schaltjahres informieren
+    if ($result)
+    {
+        write-host "Es liegt ein Schaltjahr vor: $jahreszahl"
+    }
+    else 
+    {
+        write-host "Es liegt kein Schaltjahr vor: $jahreszahl"
+    }
 }
-else 
-{
-    write-host "Es liegt kein Schaltjahr vor"
-}
+
+
+
