@@ -17,17 +17,6 @@ write-host $freundesListe
 
 #2d
 $freundesListe.add((read-host "Neuen Freund"))
+$freundesListe.add((read-host "Neuen Freund"))
 
-
-
-
-
-
-
-
-#$essensWuensche.Contains("Klaus")
-#$essensWuensche.IndexOf("Klaus3")
-#$essensWuensche.Remove("Klaus4")
-
-#$essensWuensche[2]="Uschi"
-#write-host $essensWuensche
+#2f - Hausaufgabe
