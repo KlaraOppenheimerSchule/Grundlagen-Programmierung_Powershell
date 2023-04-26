@@ -20,3 +20,12 @@ $freundesListe.add((read-host "Neuen Freund"))
 $freundesListe.add((read-host "Neuen Freund"))
 
 #2f - Hausaufgabe
+$vorhanden=$freundesListe.Contains((read-host "Gesuchter Freund"))
+if($vorhanden -eq $true)
+{
+    write-host "Dieser Freund ist vorhanden"
+}
+else 
+{
+    write-host "Dieser Freund ist NICHT vorhanden"
+}
