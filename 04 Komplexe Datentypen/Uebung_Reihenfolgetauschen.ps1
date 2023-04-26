@@ -1,10 +1,4 @@
 #A1
-$rechnerListe=  New-Object System.Collections.ArrayList
-$rechnerListe.add("YXY...")
-
-
-
-
 $zahlenReihen=  New-Object System.Collections.ArrayList
 
 [void]$zahlenReihen.Add(0)
