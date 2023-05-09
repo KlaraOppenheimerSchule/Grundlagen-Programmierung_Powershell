@@ -1,4 +1,4 @@
-#A1
+#A3
 $zahlenReihen=  New-Object System.Collections.ArrayList
 
 [void]$zahlenReihen.Add(0)
@@ -11,7 +11,6 @@ $zahlenReihen=  New-Object System.Collections.ArrayList
 [void]$zahlenReihen.Add(7)
 [void]$zahlenReihen.Add(8)
 [void]$zahlenReihen.Add(9)
-
 
 write-host "Zahlenreihe zuvor:"
 $zahlenReihen
