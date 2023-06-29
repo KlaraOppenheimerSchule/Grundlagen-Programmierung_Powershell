@@ -58,14 +58,14 @@ class Auto
 ########### Mitarbeiterklasse #################
 class Mitarbeiter
 {
-   [int]$persNr
+   [int]$personalNummer
    [string]$name
    [Auto]$dienstwagen
 
-   Mitarbeiter($p, $N)
+   Mitarbeiter($pNr, $n)
    {
-         $this.name = $N
-         $this.persNr = $p
+         $this.name = $n
+         $this.personalNummer = $pNr
    }
 
     [int]GetKilometerStandDienstwagen()
@@ -81,16 +81,16 @@ class Mitarbeiter
 
 $twingo = [Auto]::new("fsffsde36363")
 $ste = [Mitarbeiter]::new(123, "Steinam")
-$schmitt = [Mitarbeiter]::new(124, "Schmitt")
+$zobel = [Mitarbeiter]::new(124, "Zobel")
 
 $ste.Dienstwagen = $twingo
 $twingo.setFahrer($ste)
-$twingo.setFahrer($schmitt)
+$twingo.setFahrer($zobel)
 
 $twingo.fahrer
 
 $twingo.removeFahrer()
 
-$twingo.setFahrer($schmitt)
+$twingo.setFahrer($zobel)
 
 $twingo.fahrer
