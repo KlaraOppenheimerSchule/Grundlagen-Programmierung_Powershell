@@ -1,8 +1,8 @@
 function importCSV()
 {
-    $vokabeln = Import-Csv -Path "C:\Users\Zobel\OneDrive - Klara-Oppenheimer-Schule\Meine Unterlagen\Informatik\Code\Grundlagen-Programmierung_Powershell\06 Gesamtwiederholung\Vokabeln.csv" -Delimiter ";"
+    $vokabeln = Import-Csv -Path "C:\Users\czobe\OneDrive - Klara-Oppenheimer-Schule\Meine Unterlagen\Informatik\Code\Grundlagen-Programmierung_Powershell\06 Gesamtwiederholung\Vokabeln.csv" -Delimiter ";"
     #Debugdaten
-    $vokabeln | Format-Table
+    #$vokabeln | Format-Table
     return $vokabeln
 }
 
@@ -12,7 +12,7 @@ function testVokabelAbfrage ($vokabeln)
     if($wunsch -eq "j")
     {
         write-host "Test wird noch implementiert"
-        #testVokabel($vokabeln)
+        testVokabel($vokabeln)
     }
     else 
     {
@@ -20,15 +20,25 @@ function testVokabelAbfrage ($vokabeln)
     }
 }
 
+# Überprüfung in eigenen Funktion auslagern
+# Ausgabe falls falsch
 function testVokabel($vokabeln)
 {
     #Eine Vokabel aussuchen
-
-    #Deutsches Wort ausgegeben hierfür
-
-    #Englisches Wort einlesen lassen
-
-    #Funktion aufrufen testVokabelKorrekt, die prüft ob die Eingabe richtig ist
+    foreach($einzelneVokabel in $vokabeln)
+    {
+        $deutscheVokabel=$einzelneVokabel.deutsch
+        Write-Host "Bitte folgende Vokabel übersetzen: $deutscheVokabel"
+        $englischeEingabeVokabel= read-host "Englische Übersetzung"
+        if($englischeEingabeVokabel -eq $einzelneVokabel.englisch)
+        {
+            write-host "richtig"
+        }
+        else 
+        {
+            write-host "falsch"
+        }
+    }
 }
 
 $vokabeln=importCSV
