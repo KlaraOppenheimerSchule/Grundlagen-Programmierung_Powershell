@@ -37,7 +37,7 @@ class Auto
    {
         if($gef_kilometer -lt 0)
         {
-
+            write-host "Minuskilometer sind nicht möglich. Der Tacho darf nicht zurückgedreht werden"
         }
         elseif($this.doorOpenState -eq $false)
         {
@@ -82,6 +82,9 @@ class Mitarbeiter
 $twingo = [Auto]::new("fsffsde36363")
 $ste = [Mitarbeiter]::new(123, "Steinam")
 $zobel = [Mitarbeiter]::new(124, "Zobel")
+$schmidt = [Mitarbeiter]::new(125, "Schmitti") 
+
+
 
 $ste.Dienstwagen = $twingo
 $twingo.setFahrer($ste)
@@ -90,7 +93,7 @@ $twingo.setFahrer($zobel)
 $twingo.fahrer
 
 $twingo.removeFahrer()
-
+$twingo.fahren(100)
 $twingo.setFahrer($zobel)
 
 $twingo.fahrer
