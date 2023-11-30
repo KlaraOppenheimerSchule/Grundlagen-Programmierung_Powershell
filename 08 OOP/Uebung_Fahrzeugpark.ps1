@@ -1,7 +1,6 @@
 ############## Auto ####################
 class Auto
 {
-    
    #Attribute
    [string]$hersteller
    [int]$kilometerStand

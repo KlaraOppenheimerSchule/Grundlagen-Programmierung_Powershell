@@ -1,3 +1,4 @@
+
 #Aufgabe 1
 $zeichenfolge="bAcKuP.tXt"
 $zeichenfolge=$zeichenfolge.ToLower()
