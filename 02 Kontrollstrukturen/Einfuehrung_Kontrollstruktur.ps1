@@ -1,3 +1,6 @@
+
+
+
 [int] $eingegebeneZahl = Read-Host "Bitte geben Sie eine Zahl ein, die positiv ist"
  
 if($eingegebeneZahl -gt 0)
