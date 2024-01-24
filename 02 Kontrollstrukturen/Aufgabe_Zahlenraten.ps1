@@ -1,3 +1,4 @@
+
 $randomZahl = Get-Random -minimum 1 -maximum 10
 $timer=3
 

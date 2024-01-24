@@ -1,5 +1,10 @@
-$rdmZahl = Get-Random -minimum 1 -maximum 10 
+#Wählt zufällige Zahl ein Zwischen 1 und 10 aus.
+$rdmZahl = Get-Random -minimum 1 -maximum 11 
+
+#Nutzerzahl einlesen
 [int]$userZahl = Read-Host "Zahl zwischen 1 und 10 eingeben"
+
+
 if ($userZahl -ne $rdmZahl) 
 {
     if ($userZahl -lt $rdmZahl) 
