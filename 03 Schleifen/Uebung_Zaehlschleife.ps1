@@ -1,4 +1,4 @@
-<#
+
 #1a+ Zusatz
 [int]$zahl=read-host "Bitte geben Sie eine Zahl ein"
 
