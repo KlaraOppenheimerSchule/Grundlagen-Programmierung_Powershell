@@ -50,5 +50,10 @@ foreach($note in $noten)
 write-host "Die schlechteste Note ist: $schlechtesteNote"
 
 #d)	Ermittlung der besten vorhandnen Noten und Ausgabe dieser.
+#Tipp: Ganz ähnlich wie die Aufgabe b)
+
+
 #e)	Berechnung und Ausgabe vom Notendurchschnitt der eingegebenen Noten.
+#Tipp: Überlegen dir zuerst, wie du den Notendurchschnitt auf dem Papier berechnen würdest und übertrage das Vorgehen dann auf das Programm.
+
 #f)	Ausgabe der Häufigkeit des Vorkommens der Note 1.
