@@ -1,6 +1,6 @@
 function quadratZahlBerechnen($zahl) {
-    $ergebnis = $zahl*$zahl
-    #$ergebnis=[Math]::Pow($zahl,2)
+    #$ergebnis = $zahl*$zahl
+    $ergebnis=[Math]::Pow($zahl,2)
     return $ergebnis
 }
  

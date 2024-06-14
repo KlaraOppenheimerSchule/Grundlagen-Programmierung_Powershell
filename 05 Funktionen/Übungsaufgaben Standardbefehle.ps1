@@ -1,4 +1,5 @@
-﻿#1
+﻿<#
+#1
 Get-ChildItem
 
 #2
@@ -29,3 +30,10 @@ write-host ($summe/$zahlen.Count)
 
 $wert=[Math]::Round(2.333)
 write-host $wert
+
+#6
+Get-ChildItem
+#>
+#7
+Get-ChildItem | Export-Csv -Path .\Dateien.csv -Delimiter ';'
+Get-Content -Path .\Dateien.csv

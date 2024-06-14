@@ -1,6 +1,14 @@
-$dateien= Get-ChildItem
-write-host $dateien
+function addNumber ($zahl1, $zahl2, $zahl3)
+{
+    $ergebnis=$zahl1+$zahl2+ $zahl3
+    return $ergebnis
+}
 
-write-host (Get-ChildItem)
-
-Rename-Item 
+addNumber 3 6 9
+addNumber 3 6 9
+addNumber 3 6 9
+addNumber 3 6 9
+addNumber 3 6 9
+addNumber 3 6 9
+addNumber 3 6 9
+addNumber 3 6 9

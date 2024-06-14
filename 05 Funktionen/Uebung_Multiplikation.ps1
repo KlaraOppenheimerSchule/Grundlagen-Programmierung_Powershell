@@ -1,5 +1,6 @@
-function Multiplikation($zahl1,$zahl2, $zahl3) {
-    $ergebnis = $zahl1 * $zahl2 * $zahl3
+function Multiplikation($tzahl1,$tzahl2, $tzahl3) {
+    $ergebnis = $tzahl1 * $tzahl2 * $tzahl3
+
     return $ergebnis
 }
  
@@ -9,4 +10,8 @@ function Multiplikation($zahl1,$zahl2, $zahl3) {
  
 $ergebnis=Multiplikation $zahl1 $zahl2 $zahl3
 
-Write-Host $ergebnis
+Write-Host $ergebnis    
+if($ergebnis -gt 100)
+{
+    write-host "Wow - grosse Zahl"
+}

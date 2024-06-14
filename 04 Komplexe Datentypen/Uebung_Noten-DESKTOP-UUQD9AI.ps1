@@ -4,12 +4,11 @@
 $noten = New-Object System.Collections.ArrayList
 $weitereNotenGewuenscht=$true
  
-while($weitereNotenGewuenscht -eq $true)
+while($weitereNotenGewuenscht)
 {
     [int]$note= Read-Host "Gebe eine Note ein"
 
     [void]$noten.Add($note)
-    
     $wunsch=read-host "Weitere Noten gewünscht (y/n)?"
     if($wunsch -eq "n") {
         $weitereNotenGewuenscht=$false
@@ -18,13 +17,9 @@ while($weitereNotenGewuenscht -eq $true)
 
 
 
-
-
-
 #b)	Sicherstellen bei der Eingabe, dass die Noten im Bereich von 1-6 liegen.
 cls
 write-host "------------------------AUFGABE b----------------------"
-
 $noten = New-Object System.Collections.ArrayList
 $weitereNotenGewuenscht=$true
  
