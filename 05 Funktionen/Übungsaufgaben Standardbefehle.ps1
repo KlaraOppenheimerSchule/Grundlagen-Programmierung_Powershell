@@ -34,6 +34,7 @@ write-host $wert
 #6
 Get-ChildItem
 #>
+
 #7
 Get-ChildItem | Export-Csv -Path .\Dateien.csv -Delimiter ';'
 Get-Content -Path .\Dateien.csv
