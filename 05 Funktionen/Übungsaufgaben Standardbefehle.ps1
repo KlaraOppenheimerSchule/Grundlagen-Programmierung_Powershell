@@ -1,10 +1,11 @@
-﻿<#
+﻿
 #1
 Get-ChildItem
 
 #2
 $pi=[Math]::PI
 write-host $pi
+
 
 #3
 $date=get-date
@@ -32,8 +33,8 @@ $wert=[Math]::Round(2.333)
 write-host $wert
 
 #6
-Get-ChildItem
-#>
+Get-ChildItem | Where-Object { $_.PSIsContainer }
+
 
 #7
 Get-ChildItem | Export-Csv -Path .\Dateien.csv -Delimiter ';'
