@@ -1,24 +1,16 @@
 $user = "admin"
 $pass = "admin"
  
-write-host "Benutzername:"
-$benutzerName = read-host
+$benutzerName = read-host "Nutzername eingeben"
+$benutzerPasswort = read-host "Passwort eingeben"
 
-write-host "Passwort"
-$benutzerPasswort = read-host
-
-if($user -ceq $benutzerName)
+if($user -ceq $benutzerName -and $pass -ceq $benutzerPasswort)
 {
-    if($pass -ceq $benutzerPasswort)
-    {
-        write-host "Zugang gewährt"
-    }
-    else
-    {
-        write-host "Passwort falsch"
-    }
+    write-host "Zugriff gewährt"
 }
 else 
 {
-    write-host "User falsch"
+    write-host "Zugriff nicht gewährt"    
 }
+
+

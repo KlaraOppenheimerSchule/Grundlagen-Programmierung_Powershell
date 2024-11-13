@@ -17,5 +17,5 @@ if($year % 4 -eq 0)
 }
 else
 {
-    write-host "Schaltjahr"
+    write-host "Kein Schaltjahr"
 }
