@@ -1,9 +1,9 @@
 #2a
 $freundesListe = New-Object System.Collections.ArrayList
 
-[void]$freundesListe.Add("Klaus")
-[void]$freundesListe.Add("Fred")
-[void]$freundesListe.Add("Helmut")
+$freundesListe.Add("Klaus") | out-null
+$freundesListe.Add("Fred")
+$freundesListe.Add("Helmut")
 
 write-host $freundesListe
 
@@ -19,7 +19,7 @@ write-host $freundesListe
 $freundesListe.add((read-host "Neuen Freund"))
 $freundesListe.add((read-host "Neuen Freund"))
 
-#2f - Hausaufgabe
+#2f
 $vorhanden=$freundesListe.Contains((read-host "Gesuchter Freund"))
 if($vorhanden -eq $true)
 {
