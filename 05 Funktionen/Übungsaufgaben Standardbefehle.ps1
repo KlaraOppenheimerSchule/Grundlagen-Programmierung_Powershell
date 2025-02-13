@@ -33,9 +33,9 @@ $wert=[Math]::Round(2.333)
 write-host $wert
 
 #6
-Get-ChildItem | Where-Object { $_.PSIsContainer }
+#Get-ChildItem | Where-Object { $_.PSIsContainer }
 
 
-#7
+#8
 Get-ChildItem | Export-Csv -Path .\Dateien.csv -Delimiter ';'
 Get-Content -Path .\Dateien.csv
