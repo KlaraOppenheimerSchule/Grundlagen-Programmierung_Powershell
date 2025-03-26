@@ -11,7 +11,6 @@ Write-Host "Pi = "$pi
 
 $dateObject = Get-Date
 Write-Host "Aktuelles Datum: "$dateObject.Date
-
 #Aufgabe 4
 
 Write-Host "Aktuelles Jahr: "$dateObject.Year
