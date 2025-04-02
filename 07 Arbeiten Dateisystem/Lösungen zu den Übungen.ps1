@@ -14,7 +14,7 @@ if((test-path c:\test\report.txt) -eq $true)
 }
 
 New-Item c:\test\report.txt -ItemType file
-
+"test".cont
 #Aufgabe 3
 #3.	Kopieren Sie alle vorhandenen Dateien mit der Endung „txt“ aus dem Dokumentenverzeichnis des 
 # aktuellen Nutzers in ein Unterverzeichnis mit dem Namen „Textdateien“. Prüfen Sie auch hier 

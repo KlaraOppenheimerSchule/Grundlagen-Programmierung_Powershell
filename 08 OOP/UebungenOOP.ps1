@@ -5,7 +5,7 @@ $zeichenfolge=$zeichenfolge.ToLower()
 write-host $zeichenfolge
  
 #Aufgabe 2
-$zeichenfolge.contains(".txt")
+$zeichenfolge.contains(".tXt")
 
 #Aufgabe 3
 $zeichenfolge.IndexOf(".")
