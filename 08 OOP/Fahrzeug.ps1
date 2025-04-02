@@ -7,6 +7,7 @@ class Auto
     [int] $baujahr
     [bool] $tuerZu = $true
  
+    #Konstruktor definiert. Der wartet auf die Klammern gesetzten Parameter
     Auto ([string] $hersteller,[string] $modell,[int] $baujahr,
           [int] $leistung,[float] $verbrauch) 
     {
@@ -39,7 +40,9 @@ class Auto
         }
     }
 }
- 
+
+
+#Aufruf der Methode der Klasse, die ein Objekt davon anlegt. Methode wird Konstruktor genannt. 
 $meinAuto = [Auto]::new("Audi", "A4", 2015, 150, 4.5)
  
 $meinAuto 
