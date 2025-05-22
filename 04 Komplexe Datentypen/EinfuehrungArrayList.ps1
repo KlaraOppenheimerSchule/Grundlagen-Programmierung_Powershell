@@ -2,13 +2,16 @@
 $freundesListe = New-Object System.Collections.ArrayList
 
 $freundesListe.Add("Klaus") | out-null
-$freundesListe.Add("Fred")
+[void]$freundesListe.Add("Fred")
 $freundesListe.Add("Helmut")
 
 write-host $freundesListe
 
 #2b
 $freundesListe.RemoveAt(2)
+$freundesListe.Remove("Klaus")
+$freundesListe.Contains("Helmut")
+$freundesListe.IndexOf("Helmut")
 write-host $freundesListe
 
 #2c

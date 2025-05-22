@@ -1,5 +1,5 @@
 $zufallszahlen = New-Object System.Collections.ArrayList
 
-$zufallszahlen.add(3)
-[void]$zufallszahlen.add(15)
-$zufallszahlen.add(10)
+[void]$zufallszahlen.Add(3)
+[void]$zufallszahlen.Add(4)
+write-host $zufallszahlen

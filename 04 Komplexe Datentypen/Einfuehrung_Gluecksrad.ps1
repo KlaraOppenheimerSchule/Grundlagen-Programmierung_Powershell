@@ -1,6 +1,25 @@
 #Sechs Zufallszahlen vom Computer erzeugen lassen
 $zufallszahlen = New-Object System.Collections.ArrayList
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 for($i=0; $i -lt 6; $i++)
 {
     $zufallszahl = Get-Random -min 1 -max 43

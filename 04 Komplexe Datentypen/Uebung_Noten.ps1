@@ -21,6 +21,8 @@ while($weitereNotenGewuenscht -eq $true)
 
 
 
+
+
 #b)	Sicherstellen bei der Eingabe, dass die Noten im Bereich von 1-6 liegen.
 cls
 write-host "------------------------AUFGABE b----------------------"
