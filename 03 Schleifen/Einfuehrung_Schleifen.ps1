@@ -6,7 +6,7 @@ for($i=0; $i -lt 11; $i++)
 {
     write-host $i
 }
-
+<#
 #Alternativ while-Schleife
 $y=0
 while($y -lt 11)
@@ -38,5 +38,6 @@ do
     $i++
 }until($i -gt 10)
 #Schleife wird solange ausgeführt, BIS die Bedingung zutrifft
+#>
 #>
 #>

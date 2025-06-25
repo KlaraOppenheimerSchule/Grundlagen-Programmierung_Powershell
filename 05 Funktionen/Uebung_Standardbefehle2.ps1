@@ -28,7 +28,7 @@ write-host "Durschnitt beträgt: "$durchSchnittObject.Average
 #Aufgabe 7
 
 $pfad = read-host "Pfad eingeben: "
-Get-ChildItem -Path $pfad
+Get-ChildItem -Path $pfad -Directory
 
 #Aufgabe 8
 

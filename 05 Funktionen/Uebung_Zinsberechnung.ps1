@@ -6,7 +6,7 @@ function zinsBerechnung ($kapital, $zinssatz, $zinstage)
 
 [double]$kapital = Read-Host "Kapital eingeben"
 [double]$zinssatz = Read-Host "Zinssatz eingeben"
-[double]$zinstage = Read-Host "Zinstage eingeben"
+[int]$zinstage = Read-Host "Zinstage eingeben"
 
 $erg = zinsBerechnung $kapital $zinssatz $zinstage
 write-host $erg
