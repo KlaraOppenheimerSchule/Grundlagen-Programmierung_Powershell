@@ -31,6 +31,7 @@ class PC
     }
 }
 
+
 #Arraylist erzeugen
 $Pcs = New-Object System.Collections.ArrayList
 
@@ -50,3 +51,4 @@ foreach ($PC in $Pcs)
    $PC.hochfahren()
    $PC.hochfahren()
 }
+
